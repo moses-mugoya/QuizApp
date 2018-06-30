@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/innovation"
+            android:id="@+id/brain"
+            android:layout_alignParentLeft="true"
+            android:scaleType="fitXY"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Quick Brain Teaser"
+            android:layout_centerInParent="true"
+            android:layout_alignParentTop="true"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:fontFamily="cursive"
+            android:layout_marginTop="60dp"
+            android:textColor="@android:color/black"/>
+
+
+        <TextView
+            android:id="@+id/please"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/brain"
+            android:layout_marginBottom="17dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="13dp"
+            android:text="Please answer all the questions"
+            android:textColor="#000080"
+            android:textSize="23sp"
+            tools:typeface="sans"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_below="@+id/please"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="10dp"
+            android:layout_height="1dp"
+            android:background="#000080">
+        </View>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/lin"
+            android:orientation="vertical"
+            android:layout_below="@+id/please">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1. Which is the capital city of Kenya"
+                android:textColor="#191970"
+                android:textSize="18sp"
+                android:layout_margin="5dp"
+                />
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp">
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Kibra"
+                    android:textColor="	#000000"
+                    android:id="@+id/kibra"/>
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Nairobi"
+                    android:textColor="	#000000"
+                    android:id="@+id/nairobi"/>
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Mombasa"
+                    android:textColor="	#000000"
+                    android:id="@+id/mombasa"/>
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2. Which country borders Kenya to the west?"
+                android:textColor="#191970"
+                android:textSize="18sp"
+                android:layout_marginTop="7dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginBottom="2dp"
+
+                />
+
+            <EditText
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:hint="country"
+                android:id="@+id/uganda"
+                android:layout_marginLeft="15dp"
+                />
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3. Select all the towns that are in Kenya"
+                android:textSize="18sp"
+                android:textColor="#191970"
+                android:layout_margin="5dp"
+                />
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="Kisumu"
+                android:textColor="	#000000"
+                android:id="@+id/kisumu"/>
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="Nakuru"
+                android:textColor="	#000000"
+                android:id="@+id/nakuru"/>
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="Pretoria"
+                android:textColor="	#000000"
+                android:id="@+id/pretoria"/>
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="Naivasha"
+                android:textColor="	#000000"
+                android:id="@+id/naivasha"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="4. Which year did Kenya acquire Independence?"
+                android:textSize="18sp"
+                android:textColor="#191970"
+                android:layout_margin="5dp"
+                />
+
+            <EditText
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:hint="Year"
+                android:id="@+id/year"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="5. Which of the following mountains is not in Kenya"
+                android:textSize="18sp"
+                android:textColor="#191970"
+                android:layout_margin="5dp"
+                />
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp">
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Elgon"
+                    android:textColor="	#000000"
+                    android:id="@+id/elgon"/>
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Kilimanjaro"
+                    android:textColor="	#000000"
+                    android:id="@+id/kilimanjaro"/>
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Longonot"
+                    android:textColor="	#000000"
+                    android:id="@+id/longonot"/>
+            </RadioGroup>
+
+        </LinearLayout>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Submit"
+            android:onClick="calculateScore"
+            android:layout_below="@+id/lin"
+            android:layout_centerInParent="true"
+            android:textColor="#F8F8FF"
+            android:id="@+id/submit"/>
+
+    </RelativeLayout>
+
+
+</ScrollView>
